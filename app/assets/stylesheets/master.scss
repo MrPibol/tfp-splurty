@@ -1,1 +1,10 @@
 @import "bootstrap";
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.class{
+  clear: both;
+}
