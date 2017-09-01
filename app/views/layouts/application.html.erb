@@ -37,7 +37,21 @@
     <hr />
     </div>
     
-      
-    <%= yield %>
+    <class="container">
+      <%= yield %>
+    </class>
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to 'I need more','#', class: 'next-quote' %>
+          </div>
+          <div class="col-6">
+            Proudly by <%= link_to 'JP', '#', class: "footer-blurb" %>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
