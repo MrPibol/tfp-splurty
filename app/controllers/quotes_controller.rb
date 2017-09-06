@@ -3,9 +3,9 @@ class QuotesController < ApplicationController
         @quote = Quote.order("RANDOM()").first
     end
 
-    def new
-        @quote = Quote.new
-    end
+    # def new  --> Not needed anymore bc a Modal is taking care of the request
+    #     @quote = Quote.new
+    # end
     
     def create
         @quote = Quote.create(quote_params)
